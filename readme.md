@@ -1,37 +1,122 @@
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+# Proyek Pertama: Menyelesaikan Permasalahan Departemen Human Resources (HR)
 
-## Business Understanding
-Jelaskan latar belakang bisnis dari perushaan tersebut.
+### Business Understanding (Latar Belakang Bisnis)
+
+Jaya Jaya Maju merupakan perusahaan multinasional yang telah berdiri sejak tahun 2000 dengan jumlah karyawan lebih dari 1000 orang yang tersebar di berbagai wilayah Indonesia. Meski tergolong perusahaan besar, Jaya Jaya Maju menghadapi tantangan serius dalam pengelolaan karyawan, terutama terkait tingginya angka **attrition rate** (rasio karyawan keluar terhadap total karyawan) yang telah melebihi 10%.
+
+Tingginya attrition rate ini mengakibatkan ketidakstabilan operasional perusahaan, meningkatnya biaya perekrutan dan pelatihan, serta berkurangnya produktivitas tim. Oleh karena itu, manajer HR membutuhkan bantuan untuk mengidentifikasi faktor-faktor penyebab attrition serta alat bantu untuk memantau kondisi tersebut secara efisien.
+
+---
 
 ### Permasalahan Bisnis
-Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
+
+Permasalahan bisnis yang ingin diselesaikan dalam proyek ini adalah sebagai berikut:
+
+1. **Tingginya angka attrition rate**, namun tidak diketahui faktor-faktor utamanya.
+2. **Ketiadaan business dashboard** yang dapat digunakan HR untuk memantau kondisi karyawan secara real-time dan terstruktur.
+3. **Kesulitan dalam pengambilan keputusan strategis** karena tidak adanya insight dari data historis karyawan.
+4. **Data karyawan yang belum dimanfaatkan secara optimal** untuk tujuan analisis dan perencanaan sumber daya manusia.
+
+---
 
 ### Cakupan Proyek
-Tuliskan cakupan proyek yang akan dikerjakan.
+
+Cakupan proyek yang akan dikerjakan meliputi:
+
+1. **Eksplorasi dan analisis dataset karyawan** untuk mengidentifikasi pola dan faktor penyebab tingginya attrition rate.
+2. **Visualisasi data dan pembuatan dashboard** interaktif yang dapat digunakan oleh tim HR untuk memantau kondisi karyawan dan attrition rate.
+3. **Penyusunan insight dan rekomendasi** berbasis data untuk membantu manajer HR dalam membuat keputusan strategis guna mengurangi angka attrition.
+4. **Pengelompokan fitur-fitur penting** seperti usia, gaji, lama bekerja, departemen, dan lainnya yang berkontribusi terhadap keputusan karyawan untuk keluar dari perusahaan.
 
 ### Persiapan
 
-Sumber data: ....
+Sumber data: [Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
 
 Setup environment:
 ```
 
 ```
 
+
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+
+Sebagai bagian dari upaya membantu departemen Human Resources (HR) di perusahaan Jaya Jaya Maju, saya telah membuat sebuah **business dashboard interaktif menggunakan Tableau**. Dashboard ini dirancang untuk memudahkan manajer HR dalam memonitor dan menganalisis faktor-faktor yang berkontribusi terhadap tingkat attrition (keluar kerja) di perusahaan.
+
+### Fitur dan Visualisasi dalam Dashboard:
+
+1. **Ringkasan Karyawan:**
+   Menyajikan informasi umum seperti total karyawan, rata-rata lama bekerja, usia, dan pendapatan bulanan. Semua data ini akan otomatis menyesuaikan tergantung pada filter yang digunakan.
+
+2. **Analisis Gender:**
+   Menampilkan perbandingan antara karyawan laki-laki dan perempuan berdasarkan status aktif atau resign.
+
+3. **Status Karyawan (Resign vs Active):**
+   Visualisasi dalam bentuk pie chart yang menggambarkan proporsi karyawan yang masih aktif dibandingkan yang telah resign.
+
+4. **Distribusi Berdasarkan Bidang Pendidikan:**
+   Treemap yang menunjukkan latar belakang pendidikan karyawan, membantu melihat apakah terdapat hubungan antara bidang pendidikan dan keputusan untuk resign.
+
+5. **Attrition Berdasarkan Education:**
+   Bar chart untuk melihat tingkat attrition berdasarkan jenis pendidikan, sebagai acuan dalam menentukan strategi rekrutmen ke depan.
+
+6. **Pendapatan Berdasarkan Job Role:**
+   Menampilkan perbandingan antara rata-rata pendapatan bulanan dan *monthly rate* berdasarkan peran pekerjaan.
+
+### Tujuan Dashboard:
+- Mengidentifikasi pola dan faktor utama yang memengaruhi keputusan resign.
+- Menyediakan tampilan visual yang interaktif dan mudah dipahami.
+- Membantu HR dalam pengambilan keputusan strategis berbasis data.
+
+### Tools yang Digunakan:
+- **Tableau** sebagai platform untuk membangun dashboard interaktif dan responsif.
+
+> **Link Akses Dashboard**: [Lihat di Tableau Public](https://public.tableau.com/app/profile/amir.mahmud4793/viz/ProyekPertamaDicodingDs/Dashboard1)
+
+> **Catatan**: Dashboard bersifat dinamis dan akan berubah secara otomatis sesuai dengan filter atau interaksi pengguna.
+
+
+
+
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
+Untuk menjalankan prototype sistem machine learning yang telah dibuat, ikuti langkah-langkah berikut ini:
 ```
-
+pip install -r requirements.txt
+cd dashboard
+streamlit run dashboard.py
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+
+Proyek ini bertujuan untuk membantu departemen Human Resources (HR) di perusahaan Jaya Jaya Maju dalam memahami dan mengatasi tingginya angka attrition (karyawan keluar). Melalui analisis data dan visualisasi interaktif dalam bentuk business dashboard, beberapa insight penting berhasil diperoleh:
+
+- **Tingkat attrition mencapai lebih dari 10%**, yang menunjukkan perlunya perhatian serius dalam manajemen karyawan.
+- Beberapa faktor yang memiliki keterkaitan dengan tingginya attrition antara lain: bidang pendidikan tertentu, posisi pekerjaan, serta tingkat pendapatan.
+- Dashboard yang dibangun memberikan kemudahan bagi manajer HR untuk melakukan monitoring terhadap metrik-metrik penting seperti umur rata-rata karyawan, masa kerja, distribusi gender, pendapatan, dan peran pekerjaan.
+
+Dengan adanya dashboard ini, departemen HR dapat **mengambil keputusan berbasis data** secara lebih cepat dan tepat, misalnya dalam menyusun strategi retensi karyawan, perencanaan rekrutmen, serta pengembangan kebijakan kesejahteraan karyawan yang lebih baik.
+
+Proyek ini membuktikan bahwa pendekatan data science dan visualisasi dapat memberikan nilai tambah nyata bagi pengambilan keputusan di bidang sumber daya manusia.
+
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+
+Berdasarkan temuan dari analisis data dan insight yang diperoleh melalui dashboard, berikut adalah beberapa rekomendasi action items yang dapat dilakukan oleh perusahaan Jaya Jaya Maju untuk menurunkan tingkat attrition dan meningkatkan retensi karyawan:
+
+- **Melakukan employee engagement survey secara rutin**  
+  Guna mengetahui kepuasan, motivasi, dan aspirasi karyawan agar perusahaan dapat merespons kebutuhan mereka secara proaktif.
+
+- **Meningkatkan program pelatihan dan pengembangan karier**  
+  Khususnya untuk karyawan di bidang atau peran yang memiliki tingkat attrition tinggi, seperti Sales dan Research, untuk meningkatkan loyalitas dan keinginan bertahan.
+
+- **Meninjau ulang struktur kompensasi dan benefit**  
+  Melakukan benchmarking terhadap rata-rata pendapatan dan memastikan fairness antar posisi dan divisi agar karyawan merasa dihargai.
+
+- **Mengembangkan program retensi untuk kelompok rentan**  
+  Misalnya karyawan dengan masa kerja di bawah 3 tahun atau di usia produktif yang cenderung lebih mobile, dengan pendekatan personalisasi atau insentif tambahan.
+
+- **Mengoptimalkan penggunaan dashboard secara berkala**  
+  Agar manajer HR dapat terus memantau indikator kunci dan segera mengambil tindakan jika ada tren negatif yang muncul.
+
+
