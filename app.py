@@ -82,11 +82,9 @@ st.markdown("---")
 # Prediction button
 predict_button = st.button("Prediksi Attrition", use_container_width=True)
 
-# Analysis section - only shown when button is clicked
+# Replace the analysis section with this cleaner version
 if predict_button:
-    st.subheader("Analisis dan Prediksi")
-    
-    # Create input dataframe
+    # Create input dataframe - hidden from user
     input_data = pd.DataFrame({
         'BusinessTravel': [business_travel_input],
         'Department': [department_input],
@@ -98,15 +96,10 @@ if predict_button:
         'MonthlyIncome': [monthly_income_input]
     })
     
-    # Show raw input
-    with st.expander("Data Input Original"):
-        st.dataframe(input_data)
-    
-    # Apply Label Encoding like in training
+    # Apply Label Encoding like in training (hidden from user)
     for col in input_data.columns:
         if input_data[col].dtype == 'object':
             le = LabelEncoder()
-            # Map column names to variable names correctly
             if col == 'BusinessTravel':
                 le.fit(business_travel)
             elif col == 'Department':
@@ -119,29 +112,16 @@ if predict_button:
                 le.fit(job_role)
             input_data[col] = le.transform(input_data[col])
     
-    # Show encoded data
-    with st.expander("Data Setelah Encoding"):
-        st.dataframe(input_data)
-    
-    # Ensure features are in the correct order for model
+    # Ensure features are in the correct order for model (hidden from user)
     try:
         model_features = model.feature_names_in_
         input_data = input_data[model_features]
-        with st.expander("Informasi Fitur Model"):
-            st.write("Fitur yang diharapkan model:", model_features)
     except:
-        st.warning("Model tidak memiliki atribut feature_names_in_. Menggunakan urutan kolom asli.")
+        pass  # Silently handle if model doesn't have feature_names_in_
     
     # Make prediction with diagnostics
     try:
         prediction = model.predict(input_data)
-        
-        # Show prediction probabilities if available
-        if hasattr(model, 'predict_proba'):
-            proba = model.predict_proba(input_data)
-            proba_df = pd.DataFrame(proba, columns=["Prob. Tidak Resign", "Prob. Resign"])
-            st.write("Probabilitas Prediksi:")
-            st.dataframe(proba_df)
         
         # Display final result with nicely formatted card
         st.markdown("## Hasil Prediksi")
@@ -182,6 +162,8 @@ if predict_button:
                     st.markdown(p)
             else:
                 st.markdown("- Kombinasi berbagai faktor dalam data")
+        
+    
                 
     except Exception as e:
         st.error(f"Error saat memprediksi: {str(e)}")
