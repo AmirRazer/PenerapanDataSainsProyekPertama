@@ -32,10 +32,10 @@ Cakupan proyek yang akan dikerjakan meliputi:
 
 Sumber data: [Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/main/employee/employee_data.csv)
 
-Setup environment:
+<!-- Setup environment:
 ```
 
-```
+``` -->
 
 
 ## Business Dashboard
@@ -81,6 +81,7 @@ Sebagai bagian dari upaya membantu departemen Human Resources (HR) di perusahaan
 ## Menjalankan Sistem Machine Learning
 
 Untuk menjalankan prototype sistem machine learning yang telah dibuat, ikuti langkah-langkah berikut ini:
+> **Link Akses Dashboard**: [Lihat di StreamlitOnline](https://amirrazer-penerapandatasainsproyekpertama-app-9nb4yz.streamlit.app/)
 ```
 pip install -r requirements.txt
 cd dashboard
