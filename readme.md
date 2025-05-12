@@ -84,8 +84,8 @@ Untuk menjalankan prototype sistem machine learning yang telah dibuat, ikuti lan
 > **Link Akses Dashboard**: [Lihat di StreamlitOnline](https://amirrazer-penerapandatasainsproyekpertama-app-9nb4yz.streamlit.app/)
 ```
 pip install -r requirements.txt
-cd dashboard
-streamlit run dashboard.py
+
+streamlit run app.py
 ```
 
 ## Conclusion
