@@ -82,19 +82,47 @@ Sebagai bagian dari upaya membantu departemen Human Resources (HR) di perusahaan
 
 Untuk menjalankan prototype sistem machine learning yang telah dibuat, ikuti langkah-langkah berikut ini:
 > **Link Akses Dashboard**: [Lihat di StreamlitOnline](https://amirrazer-penerapandatasainsproyekpertama-app-9nb4yz.streamlit.app/)
-```
+Untuk menjalankan proyek HR Analytics ini secara lokal, silakan ikuti panduan berikut:
+
+### 🔗 Repository
+Proyek ini tersedia di GitHub:  
+👉 [PenerapanDataSainsProyekPertama](https://github.com/AmirRazer/PenerapanDataSainsProyekPertama)
+
+---
+
+### 1. Clone Repository
+
+Clone repositori ke komputer lokal Anda menggunakan perintah berikut:
+
+```bash
+git clone https://github.com/AmirRazer/PenerapanDataSainsProyekPertama.git
+cd PenerapanDataSainsProyekPertama
+python -m venv env
+venv\Scripts\activate
 pip install -r requirements.txt
-cd dashboard
-streamlit run dashboard.py
+streamlit run app.py
+
 ```
 
 ## Conclusion
 
 Proyek ini bertujuan untuk membantu departemen Human Resources (HR) di perusahaan Jaya Jaya Maju dalam memahami dan mengatasi tingginya angka attrition (karyawan keluar). Melalui analisis data dan visualisasi interaktif dalam bentuk business dashboard, beberapa insight penting berhasil diperoleh:
 
-- **Tingkat attrition mencapai lebih dari 10%**, yang menunjukkan perlunya perhatian serius dalam manajemen karyawan.
-- Beberapa faktor yang memiliki keterkaitan dengan tingginya attrition antara lain: bidang pendidikan tertentu, posisi pekerjaan, serta tingkat pendapatan.
-- Dashboard yang dibangun memberikan kemudahan bagi manajer HR untuk melakukan monitoring terhadap metrik-metrik penting seperti umur rata-rata karyawan, masa kerja, distribusi gender, pendapatan, dan peran pekerjaan.
+- **Jumlah yang resign:** 179 karyawan
+- **Gender:** Laki-laki sedikit lebih dominan melakukan resign dibanding perempuan
+- **Rata-rata umur:** 33,47 tahun (usia produktif)
+- **Rata-rata masa kerja:** 5,19 tahun (menunjukkan potensi stagnasi karir)
+- **Rata-rata pendapatan bulanan:** 4.873
+- **Jumlah yang resign:** 179 karyawan
+- **Gender:** Laki-laki sedikit lebih dominan melakukan resign dibanding perempuan
+- **Rata-rata umur:** 33,47 tahun (usia produktif)
+- **Rata-rata masa kerja:** 5,19 tahun (menunjukkan potensi stagnasi karir)
+- **Rata-rata pendapatan bulanan:** Rp4.873.000
+- **Bidang pendidikan dominan:** Life Sciences dan Medical
+- **Job role dengan gaji lebih rendah** cenderung memiliki tingkat attrition lebih tinggi dibandingkan role seperti Manager dan Research Director
+
+- **Bidang pendidikan dominan:** Life Sciences dan Medical
+- **Job role dengan gaji lebih rendah** cenderung memiliki tingkat attrition lebih tinggi dibandingkan role seperti Manager dan Research Director
 
 Dengan adanya dashboard ini, departemen HR dapat **mengambil keputusan berbasis data** secara lebih cepat dan tepat, misalnya dalam menyusun strategi retensi karyawan, perencanaan rekrutmen, serta pengembangan kebijakan kesejahteraan karyawan yang lebih baik.
 
