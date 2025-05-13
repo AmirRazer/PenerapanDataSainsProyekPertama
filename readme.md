@@ -41,6 +41,11 @@ Sumber data: [Dataset](https://github.com/dicodingacademy/dicoding_dataset/blob/
 ## Business Dashboard
 
 Sebagai bagian dari upaya membantu departemen Human Resources (HR) di perusahaan Jaya Jaya Maju, saya telah membuat sebuah **business dashboard interaktif menggunakan Tableau**. Dashboard ini dirancang untuk memudahkan manajer HR dalam memonitor dan menganalisis faktor-faktor yang berkontribusi terhadap tingkat attrition (keluar kerja) di perusahaan.
+![image](https://github.com/user-attachments/assets/8d316294-5b2e-4219-84f1-5254926d53f6)
+
+Mockup gambar di atas di gunakan agar mempermudah saat mengklompokan hasil visualisasi dashboard yang telah di buat
+
+![image](https://github.com/user-attachments/assets/0c443cbd-2a71-45af-b5be-4bf7d8493825)
 
 ### Fitur dan Visualisasi dalam Dashboard:
 
@@ -82,6 +87,10 @@ Sebagai bagian dari upaya membantu departemen Human Resources (HR) di perusahaan
 
 Untuk menjalankan prototype sistem machine learning yang telah dibuat, ikuti langkah-langkah berikut ini:
 > **Link Akses Dashboard**: [Lihat di StreamlitOnline](https://amirrazer-penerapandatasainsproyekpertama-app-9nb4yz.streamlit.app/)
+
+![image](https://github.com/user-attachments/assets/c880d5ae-8b04-4b74-96b9-e4ea3f261093)
+dengan prototype machine learning ini perusahaan dapat **meningkatkan retensi karyawan, mengurangi biaya rekrutmen, serta menciptakan lingkungan kerja yang lebih stabil dan produktif.**
+
 Untuk menjalankan proyek HR Analytics ini secara lokal, silakan ikuti panduan berikut:
 
 ### 🔗 Repository
