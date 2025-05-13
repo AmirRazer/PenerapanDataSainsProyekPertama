@@ -125,7 +125,7 @@ Proyek ini bertujuan untuk membantu departemen Human Resources (HR) di perusahaa
 - **Gender:** Laki-laki sedikit lebih dominan melakukan resign dibanding perempuan
 - **Rata-rata umur:** 33,47 tahun (usia produktif)
 - **Rata-rata masa kerja:** 5,19 tahun (menunjukkan potensi stagnasi karir)
-- **Rata-rata pendapatan bulanan:** Rp4.873.000
+- **Rata-rata pendapatan bulanan:** 4.873
 - **Bidang pendidikan dominan:** Life Sciences dan Medical
 - **Job role dengan gaji lebih rendah** cenderung memiliki tingkat attrition lebih tinggi dibandingkan role seperti Manager dan Research Director
 
