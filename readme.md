@@ -111,6 +111,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 ```
+![image](https://github.com/user-attachments/assets/fa7fba99-0079-47f4-bedd-9977b150aa87)
 
 ## Conclusion
 
